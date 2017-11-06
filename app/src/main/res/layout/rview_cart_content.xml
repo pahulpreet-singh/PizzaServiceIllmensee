@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:text="Category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/categorytextViewtc"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_width="0dp">
+            <TextView
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/nametextViewtc"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+
+            <TextView
+                android:text="x1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/quantitytextViewtc"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content">
+
+            <TextView
+                android:text="Price"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pricetextViewtc"
+                android:layout_weight="1"
+                android:textAppearance="@android:style/TextAppearance.Medium" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenttextViewtc"
+        android:textAppearance="@android:style/TextAppearance.Small" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Extras"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/extraTextViewtc"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+        <!--<View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:padding="8dp"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_remove_circle"
+            android:id="@+id/removeimageViewtc" />
+    </LinearLayout>
+
+</LinearLayout>

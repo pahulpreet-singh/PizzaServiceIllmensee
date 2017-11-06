@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Startseite" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_cart_black"
+            android:title="Einkaufswagen" />
+        <item
+            android:id="@+id/nav_minOrder"
+            android:icon="@drawable/ic_min_order"
+            android:title="Mindestbestellwert" />
+
+    </group>
+
+    <item android:title="Kommunizieren">
+        <menu>
+            <item
+                android:id="@+id/nav_timings"
+                android:icon="@drawable/ic_timings"
+                android:title="Lieferzeiten" />
+            <item
+                android:id="@+id/nav_reachus"
+                android:icon="@drawable/ic_reachus"
+                android:title="Erreiche uns" />
+            <item
+                android:id="@+id/nav_call"
+                android:icon="@drawable/ic_call"
+                android:title="Tel: +49 7558 9382767" />
+        </menu>
+    </item>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_terms"
+                android:icon="@drawable/ic_terms"
+                android:title="Geschäftsbedingungen" />
+        </menu>
+    </item>
+
+</menu>

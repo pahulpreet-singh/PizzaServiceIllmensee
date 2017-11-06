@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        android:text="Auftrag:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="(Order)"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ordertextview"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <TextView
+            android:text="Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pricetextViewod"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contenttextViewOD"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@android:style/TextAppearance.Small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:text="Anzahl:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:layout_weight="1"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_add_circle"
+            android:id="@+id/addimageView7"
+            android:paddingRight="6dp"
+            android:paddingLeft="6dp"/>
+
+        <TextView
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/quantitytextView"
+            android:paddingRight="6dp"
+            android:paddingLeft="6dp"
+            android:textAppearance="@android:style/TextAppearance.Medium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_remove_circle"
+            android:id="@+id/removeimageView9"
+            android:paddingRight="6dp"
+            android:paddingLeft="6dp"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="16dp"
+        android:text="In den Einkaufswagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_filled_red"
+        android:id="@+id/addtocartbutton" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:text="Extra-Zutaten? (Runterscrollen)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pizzaToptextView2COD"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:id="@+id/pizzaTopListCOD"
+        android:numColumns="2"/>
+
+    <TextView
+        android:text="Bestimmen des Dressings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:id="@+id/saladDresstextView3COD"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/saladDressSpinnerCOD"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:text="Nudelvariante wählen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noodlestextView5COD"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noodlesSpinner2COD"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"/>
+    <CheckBox
+        android:text="mit Käse überbacken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cheeseBakecheckBoxCOD"
+        android:visibility="gone"
+        android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/commentsEditTextCOD"
+        android:hint="(Zusätzliche Kommentare)"
+        android:minLines="2"
+        android:maxLines="2"
+        android:gravity="top|left|start"
+        />
+
+
+</LinearLayout>
